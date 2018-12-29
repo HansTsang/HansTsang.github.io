@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>斯文败类</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			/* body 样式 */
+			
+			body {
+				font-family: Arial;
+				margin: 0;
+				background-color: #f5f5f5;
+			}
+			/* 标题 */
+			
+			.header {
+				padding: 110px;
+				text-align: center;
+				width: 100%;
+				/*background: #1abc9c;*/
+				background-image: url(img/city.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				color: white;
+			}
+			/*头像*/
+			
+			.header .portraint {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+			}
+			/* 标题字体加大 */
+			
+			.header h1 {
+				font-size: 40px;
+			}
+			/* 导航 */
+			
+			.navbar {
+				overflow: hidden;
+				background-color: #393D49;
+			}
+			/* 导航栏样式 */
+			
+			.navbar a {
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 18px 20px;
+				text-decoration: none;
+			}
+			/* 右侧链接*/
+			
+			.navbar a.right {
+				float: right;
+			}
+			/* 鼠标移动到链接的颜色 */
+			
+			.navbar a:hover {
+				/*background-color: #ddd;*/
+				/*color: black;*/
+				border-bottom: 5px solid #5FB878;
+			}
+			/*默认选中*/
+			.navbar .owner{
+				border-bottom: 5px solid #5FB878;
+			}
+			
+			/* 列容器 */
+			
+			.row {
+				display: -ms-flexbox;
+				/* IE10 */
+				display: flex;
+				-ms-flex-wrap: wrap;
+				/* IE10 */
+				flex-wrap: wrap;
+				
+				width: 980px;
+				margin:20px auto;
+			}
+			/* 创建两个列 */
+			/* 边栏 */
+			
+			.side {
+				-ms-flex: 30%;
+				/* IE10 */
+				flex: 30%;
+				background-color: white;
+				padding: 20px;
+				margin-right: 10px;
+			}
+			/* 主要的内容区域 */
+			
+			.main {
+				-ms-flex: 68%;
+				/* IE10 */
+				flex: 68%;
+				background-color: white;
+				padding: 20px;
+			}
+			/* 测试图片 */
+			
+			.fakeimg {
+				background-color: #aaa;
+				width: 100%;
+				padding: 20px;
+			}
+			/*引用*/
+			.recommend{
+				border-left: 5px solid #5FB878;
+				padding: 13px;
+				color: #01AAED;
+				margin-top: 10px;
+				
+			}
+			/* 底部 */
+			
+			.footer {
+				padding: 30px;
+				text-align: center;
+				background: #2F4056;
+				color: #01AAED;
+			}
+			/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+			
+			@media screen and (max-width: 700px) {
+				.row {
+					flex-direction: column;
+				}
+			}
+			/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+			
+			@media screen and (max-width: 400px) {
+				.navbar a {
+					float: none;
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="header">
+			<img src="img/girl.jpg" class="portraint" />
+			<h1>也许我撞到南墙才会回头吧</h1>
+			<p>城北以南_Zg</p>
+		</div>
+
+		<div class="navbar">
+			<a href="#" class="owner">链接</a>
+			<a href="#">链接</a>
+			<a href="#">链接</a>
+			<a href="#" class="right">链接</a>
+		</div>
+
+		<div class="row">
+			<div class="side">
+				<h2>关于我</h2>
+				<h5>我的照片墙:</h5>
+				<div class="fakeimg" style="height:200px;">这边插入图像</div>
+				<p>关于我的介绍..</p>
+				<h3>更多内容</h3>
+				<p>我的更多内容</p>
+				<div class="recommend">热门文章推荐</div>
+				<div class="recommend">热门文章推荐</div>
+				<div class="recommend">热门文章推荐</div>
+				<div class="recommend">热门文章推荐</div>
+			</div>
+			<div class="main">
+				<h2>标题</h2>
+				<h5>副标题</h5>
+				<div class="fakeimg" style="height:200px;">图像</div>
+				<p>一些文本..</p>
+				<p>佛陀阿难出家前，在道上见一美貌少女，从此爱慕难舍。 佛祖问他：“你有多喜欢那少女？” 阿难回答：“愿化身为青石桥，受五百年风吹，五百年日晒，五百年雨淋，只求那少女从桥上走过。”……</p>
+				<br>
+				<h2>标题</h2>
+				<h5>副标题</h5>
+				<div class="fakeimg" style="height:200px;">图像</div>
+				<p>一些文本..</p>
+				<p>佛陀阿难出家前，在道上见一美貌少女，从此爱慕难舍。 佛祖问他：“你有多喜欢那少女？” 阿难回答：“愿化身为青石桥，受五百年风吹，五百年日晒，五百年雨淋，只求那少女从桥上走过。”……</p>
+				<br>
+				<h2>标题</h2>
+				<h5>副标题</h5>
+				<div class="fakeimg" style="height:200px;">图像</div>
+				<p>一些文本..</p>
+				<p>佛陀阿难出家前，在道上见一美貌少女，从此爱慕难舍。 佛祖问他：“你有多喜欢那少女？” 阿难回答：“愿化身为青石桥，受五百年风吹，五百年日晒，五百年雨淋，只求那少女从桥上走过。”……</p>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>城北以南</p>
+			<p>© 2018 hanstsang.com MIT license</p>
+		</div>
+
+	</body>
+
+</html>
